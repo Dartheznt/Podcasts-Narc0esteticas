@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" class="loading">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reproductor de sonido</title>
+   
+</head>
+<body>
+    <div class="loader">
+        <div class="load-text">
+            <div class="loaded-text">P</div>
+            <div class="loading-text">ODCAST</div>
+        </div>
+    </div>
+
+
+    <div class="c-containter">
+            <div class="music-container">
+                <section class="music-container-without-arrows">
+                    <section class="album-cover">
+                        
+                        <button class="arrow left" id="prev">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_left.svg" alt="Next Music">
+                        </button>
+                        <div class="wrapper">
+                            <span class="circle circle-1"></span>
+                            <span class="circle circle-2"></span>
+                            <span class="circle circle-3"></span>
+                            <span class="circle circle-4"></span>
+                            <span class="circle circle-5"></span>
+                            <span class="circle circle-6"></span>
+                            <span class="circle circle-7"></span>
+                            <span class="circle circle-8"></span>
+                        </div>
+                    
+                        <img src="" class="cover" alt="Portada"> 
+                
+                        
+                        <button class="arrow right" id="next">
+                            <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/arrow_right.svg" alt="Next Music">
+                        </button>
+                    </section>
+                    <section class="music-player">
+                        <h1 class="music-player__title"></h1>
+                        <h2 class="music-player__author"></h2>
+                        <div class="music-time">
+                            <p class="music-time__current"></p>
+                            <p class="music-time__last"></p>
+                        </div>
+                        <div class="music-bar" id="progress">
+                            <div id="length"></div>
+                        </div>
+                        <div class="music-order">
+                            <div class="music-order__loop is-loop" id="loop">
+                                <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/loop.svg" alt="Loop music">
+                            </div>
+                            <div class="music-order__shuffle" id="shuffle">
+                                <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/shuffle.svg" alt="Shuffle music">
+                            </div>
+                        </div>
+                        <div class="music-control">
+                            <div class="music-control__backward" id="backward">
+                                <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/backward.svg" alt="Backward">
+                            </div>
+                            <div class="music-control__play" id="play">
+                                <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/play.svg" alt="Play" class="play">
+                            </div>
+                            <div class="music-control__forward" id="forward">
+                                <img src="https://snowleo208.github.io/100-Days-of-Code/7.%20Music%20Player/img/forward.svg" alt="Forward">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="track-menu">
+                    <select id="trackSelector" class="track-selector"></select>
+                </section>
+            </div>
+        </div>
+ <script src="script.js" defer></script>
+
+</body>
+</html>
